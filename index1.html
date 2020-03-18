@@ -5,10 +5,27 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<div class ="container">
+
 <body>
-<h2> Sobre Nós </h2>
-<img class="img-fluid" src="assets/img/empresa.jpg" alt="">
+    <div class ="container">
+    <h2> Sobre Nós </h2>
+    <!-- img-responsive para tornar a imagem responsiva -->
+    <img class="img-responsive" src="assets/img/empresa.jpg" alt="">
+    <!-- data-togle="collapse" para esconder o elemento declarado em data-target -->
+    <h2 data-toggle="collapse" data-target="#primeiro">Desde de 1975</h2>
+    <!-- collapse in garante que a primeira opcao não estará "escondida" -->
+    <p id="primeiro" class="collapse in">A topcasaFina esta no mercado desde...</p>
+
+    <h2 data-toggle="collapse" data-target="#segundo">Desde de 1975</h2>
+    <!-- collapse garante que a segunda e terceira opcao estarão escondidos -->
+    <p  id="segundo" class="collapse">A topcasaFina esta no mercado desde...</p>
+
+    <h2 data-toggle="collapse" data-target="#terceiro">Desde de 1975</h2>
+    <p  id="terceiro" class="collapse"> A topcasaFina esta no mercado desde...</p>
 </div>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
 </body>
+    
+    
 </html>
