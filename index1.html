@@ -1,31 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
-    <div class ="container">
-    <h2> Sobre Nós </h2>
-    <!-- img-responsive para tornar a imagem responsiva -->
-    <img class="img-responsive" src="assets/img/empresa.jpg" alt="">
-    <!-- data-togle="collapse" para esconder o elemento declarado em data-target -->
-    <h2 data-toggle="collapse" data-target="#primeiro">Desde de 1975</h2>
-    <!-- collapse in garante que a primeira opcao não estará "escondida" -->
-    <p id="primeiro" class="collapse in">A topcasaFina esta no mercado desde...</p>
-
-    <h2 data-toggle="collapse" data-target="#segundo">Desde de 1975</h2>
-    <!-- collapse garante que a segunda e terceira opcao estarão escondidos -->
-    <p  id="segundo" class="collapse">A topcasaFina esta no mercado desde...</p>
-
-    <h2 data-toggle="collapse" data-target="#terceiro">Desde de 1975</h2>
-    <p  id="terceiro" class="collapse"> A topcasaFina esta no mercado desde...</p>
+<section class ="container">
+<h3> Sobre Nós </h3>
+<!-- img-responsive para tornar a imagem responsiva -->
+<img class="img-responsive" src="assets/img/empresa.jpg" alt="">
+<div class="panel-group" id="paineis-sobre">
+<div class="panel panel-default" > 
+    <div class="panel-heading">
+        <!-- data-togle="collapse" para esconder o elemento declarado em data-target -->
+        <h3 class="panel-title"
+            data-toggle="collapse"
+            data-target="#primeiro"
+            data-parent="#paineis-sobre">Desde de 1975</h3>
+    </div>
+    <div id="primeiro" class="collapse in">
+        <div class="panel-body">
+            <!-- collapse in garante que a primeira opcao não estará "escondida" -->
+            <p>A TopCasaFina Arquitetura está no mercado desde 1935 trazendo uma série de projetos de qualidade para seus clientes e mudando suas vidas para sempre.
+                Nossa empresa construiu o palácio Dionísio para Don Pedro IX que ninguém nunca ouviu falar.
+            </p>
+        </div>
+    </div>
 </div>
-    <script src="jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js" ></script>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"
+        data-toggle="collapse" 
+        data-target="#segundo"
+        data-parent="#paineis-sobre">Preços acessíveis</h3>
+    </div>
+    <div id="segundo" class="collapse">
+        <div class="panel-body">
+            <!-- collapse garante que a segunda e terceira opcao estarão escondidos -->
+            <p>Com projetos a partir de R$ 5.000.000,00 a nossa empresa procura abranger os clientes mais ricos do mundo.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class ="panel-title" 
+        data-toggle="collapse" 
+        data-target="#terceiro"
+        data-parent="#paineis-sobre">Alegria em colaborar para um mundo mais bonito</h3>
+    </div>
+    <div id="terceiro" class="collapse">
+        <div class="panel-body">
+            <p > Os projetos da TopCasaFina Arquitetura são sempre acompanhados dos melhores profissionais de decoração para que
+                o produto final fique lindo.
+            </p>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<div class="jumbotron">
+    <div class="container">
+        <h3>Mais de 300 prêmios em design e em conforto.</h2>
+        <p>Mais de 5 milhões de cliente satisfeitos em todo mundo.</p>
+    </div>
+</div>
+
+
+<section class="container">
+    <h2>Nossos projetos</h2>
+    <figure class="thumbnail">
+        <img src="assets/img/projetos/casa-castelo.png" alt="Foto da casa castelo">
+        <figcaption class="caption">
+                <h3>Casa Castelo</h3>
+                <p>A Casa Castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
+        </figcaption>
+    </figure>
+
+
+    <figure class="thumbnail">
+        <img src="assets/img/projetos/casa-lago.png" alt="Foto da casa castelo">
+        <figcaption class="caption">
+                <h3>Casa Castelo</h3>
+                <p>A Casa Castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
+        </figcaption>
+    </figure>
+
+
+    <figure class="thumbnail">
+        <img src="assets/img/projetos/mercado-marapira.png" alt="Foto da casa castelo">
+        <figcaption class="caption">
+                <h3>Casa Castelo</h3>
+                <p>A Casa Castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
+        </figcaption>
+    </figure>
+
+    <figure class="thumbnail">
+        <img src="assets/img/projetos/palacio-dionisio.png" alt="Foto da casa castelo">
+        <figcaption class="caption">
+                <h3>Casa Castelo</h3>
+                <p>A Casa Castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
+        </figcaption>
+    </figure>
+
+
+    <figure class="thumbnail">
+        <img src="assets/img/projetos/residencia-ludi.png" alt="Foto da casa castelo">
+        <figcaption class="caption">
+                <h3>Casa Castelo</h3>
+                <p>A Casa Castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
+        </figcaption>
+    </figure>
+</section>
+
+
+<script src="jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js" ></script>
 </body>
-    
-    
+
+
 </html>
